@@ -3,32 +3,37 @@
 * {
     text-align: left;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
 }
+
 body {
+    position: absolute;
     width: 60%;
-    height: 100vh;
+    height: 10vh;
     margin: 0;
     color: #ffffff;
     font-size: 16px;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .bg{
     position:absolute;
     width: 100%;
-    background-image: linear-gradient(270deg, rgba(203,249,218,0.5) 0%,
-    rgba(18,45,66, 1) 100%), url(./img/exercise-weights-iron-dumbbell-with-extra-plates1.png);
+    background-image: linear-gradient(270deg, rgba(61, 210, 204, 0.4) 0%,
+    rgba(18,45,66, 1) 100%), url(./img/group-diverse-athletes-sitting-together1.png);
     background-size: cover;
     background-attachment: fixed;
     left: 1em;
   }
 
   h1{
-    font-size: 5em;
-    margin: 0.5em auto;
-    margin-left: 0.6em;
-    margin-bottom: 0.1em;
-    text-align: left;
+    width: 100vh;
+    font-size: 2.5em;
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
+    text-align: center;
+    z-index: 0;
   }
 
   p {
@@ -51,9 +56,10 @@ body {
     border: none;
     padding: 2rem 0;
   }
-  
-  fieldset:not(:last-of-type) {
-    border-bottom: 3px solid #ffffff;
+
+  fieldset{
+    padding-top: 0em;
+    padding-bottom: 0.5em;
   }
   
   label, input {
@@ -62,7 +68,7 @@ body {
 
   label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
   }
 
   input,
@@ -70,27 +76,41 @@ body {
   select{
     margin: 10px 0 0 0;
     width: 100%;
-    min-height: 2em;
+    min-height: 1.5em;
   }
   
   input, textarea {
     background-color: #ffffff;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 2.5px;
     color: #000000;
+    max-width: 100%;
   }
-  
+
+  .img-form{
+    color: #ffffff;
+    background-color: transparent;
+  }
+
   .inline {
-    width: unset;
-    margin: 0 0.5em 0 0;
+    width: 100%;
+    max-width: 5%;
+    margin: 0em 1em 0 5em;
+    font-size: 1em;
     vertical-align: middle;
+  }
+
+  .terms{
+    width: 80%;
+    margin-top: 1.5em;
+    margin-left: 15%;
   }
 
   input[type="submit"],a{
     display: block;
     margin: 0.25em 0.5em;
     height: 3em;
-    font-size: 1em;
+    font-size: 1.1em;
     background-color:transparent;
     border: 2px solid #ffffff;
     text-align: center;
@@ -98,34 +118,71 @@ body {
     min-width: 50px;
   }
 
+  .age-form{
+    display: block;
+    width: 5%;
+    margin-right: 10em;
+    width: 5em;
+  }
+
+  .experience{
+    display: block;
+    width: 5%;
+    margin-left: 0.25em;
+    width: 5em;
+  }
+
   a{
-    width: 100%;
+    background-color: rgba(0,0,0, 0.4);
+    width: 40%;
+    margin: auto;
+    margin-top: 75%;
     padding-top: 0.75em;
     border-radius: 5px;
     height: unset;
     min-height: 2em;
+    font-size: 1.15em;
     text-decoration: none;
   }
+
+
 
   a:visited{
     color: #ffffff;
   }
 
+  a:focus,a:hover{
+    color: #3DD2CC;
+    border-color: #3DD2CC;
+  }
+
   .flex{
     display: flex;
+    width: 100%;
     margin-top: 0.5em;
   }
-  
+
+  .card{
+    position: inherit;
+    background-color: rgba(0,0,0, 0.75);
+    width: 100vh;
+    height: 85vh;
+    padding: 17.5% 0 3% 1%;
+    margin-left: -1em;
+    margin-top: -10em;
+    z-index: -1;
+  }
+
   .flex-left {
     position:absolute;
     width: 50%;
-    height: 100%;
+    height: 92%;
   }
 
   .flex-right{
     position: fixed;
     width: 50%;
-    height: 100%;
+    height: 80%;
     top: 10%;
     right: 0%;
     text-align:center;
@@ -133,24 +190,33 @@ body {
   }
 
   .title{
-    margin-top: 25%;
-    font-size: 4em;
+    width: 100%;
+    margin: 15% auto 0;
+    font-size: 3em;
     text-align: center;
   }
 
   .desc{
-    font-size: 1.5em;
-    margin: auto 1.5em;
+    width: 80%;
+    font-size: 1.1em;
+    margin: 1.5em auto 0;
     text-align: justify;
-
   }
 
   input[type="file"] {
-    padding: 5px 1px 1px 3px;
+    padding: 1px;
+    font-size: 0.85em;
   }
 
-  
-  a {
-    color: #dfdfe2;
+  input:focus, textarea:focus{
+    outline: 3px solid #3DD2CC;
+}
+
+  #back{
+    background-color: unset;
+    border-style: none;
+    margin: auto;
+    margin-left: -15%;
+    margin-top: -5%;
+    font-size: 1.4em;
   }
-  
