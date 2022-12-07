@@ -11,33 +11,34 @@
   <body>
     <h1>Sign Up</h1>
 
-    <div class="flex">
+    <div class="flex card">
       <div class="flex-left">
         <form action=''>
           <fieldset>
-            <label>Enter Your Full Name<input type="text" name="first-name" placeholder="John" required /></label>
+            <label>Enter Your Full Name<input type="text" name="first-name" placeholder="John Doe" required /></label>
             <label>Enter Your Email<input type="email" name="email" placeholder="username@domain.com" required /></label>
             <label>Create a New Password<input type="password" name="password" required /></label>
           </fieldset>
-    
           <fieldset>
-            <label>Upload a Profile Picture<input type="file" name="img" accept="image/*"></label>
-            <label>Input Your Age (years): <input type="number" name="age" max="120" />
-            </label>
+            <div class="flex">
+                <label>Upload a Profile Picture<input type="file" name="profile" accept="image/*" class="img-form"></label>
+                <label>Upload Certificate<input type="file" name="certificate" accept="application/pdf" class="img-form"></label>
+            </div>
+            <div class="flex">
+                <label>Age<input type="number" name="age" min="12" max="120" class="age-form"/></label>
+            </div>
             <label>Provide a Bio
               <textarea name="bio" rows="3" cols="30" placeholder="Enter your bio here..."></textarea>
             </label>
           </fieldset>
     
           <div class="flex">
-            <a href="login.html">Back to Login Page</a>
-            <input type="submit" value="Create Account" formaction="login.html"/>
+            <a href="account.html" id="back">← Back</a>
           </div>
         </form>
       </div>
       <div class="flex-right">
-        <h1 class="title">Cardi-On!</h1>
-        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, autem. Dolore assumenda possimus fuga dicta sapiente perferendis laudantium molestias deserunt, cumque culpa excepturi. Perspiciatis sequi ad velit inventore suscipit delectus?</p>
+        <a href="homepage.html">Create Account</a>
       </div>
   </div>
   </body>
