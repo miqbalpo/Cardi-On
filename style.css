@@ -16,27 +16,27 @@ html{
 
 
 /*Responsive: Mobile*/
-@media screen and (max-width: 1080px){
+@media screen and (max-device-width: 720px) and (max-device-width: 1081px){
     html{
         scroll-behavior: smooth;
-        width: 53.8vh;
+        min-width: 720px;
     }
     #navbar{
         position: fixed;
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: 100vh;
         top: 0;
-        padding: 1em 0;
+        padding: 2em 0;
         vertical-align: middle;
         background-color: #1B262C;
         z-index: 1;
     }
     #logo{
         position: relative;
+        right: 5%;
         margin: auto;
-        left: 10%;
-        max-width: 50px;
+        max-width: 80px;
         vertical-align: middle;
     }
     .nav-button{
@@ -52,9 +52,10 @@ html{
     .name{
         display: block;
         position: relative;
-        right: 7%;
+        right: 35%;
         width: 20vh;
-        font-size: 1.25em;
+        font-size: 2.25em;
+        font-weight: bold;
         color: #ffffff !important;
     }
     .left,.right{
@@ -64,12 +65,12 @@ html{
         background-color: transparent;
         color: white;
         padding: 12px 16px;
-        font-size: 1.5em;
+        font-size: 3em;
         border: none;
     }
     .dropdown {
         position: relative;
-        right: 5%;
+        right: 20%;
     }
     .dropdown-content {
         display: none;
@@ -81,15 +82,15 @@ html{
         z-index: 1;
     } 
     .dropdown-content a {
-        width: 15vh;
+        width: 30vh;
         color: black;
-        padding: 12px;
-        font-size: 1.25em;
+        padding: 0.5em 1.5em;
+        font-size: 2em;
         text-decoration: none;
         display: block;
     }  
     .dropdown-content a:hover {
-        background-color: #ddd;
+        background-color: #ffffff;
     }  
     .dropdown:hover .dropdown-content{
         display: block;
@@ -101,13 +102,13 @@ html{
     /*Welcome Section*/
     .login,.getstarted,.learnmore{
         display: block;
-        width: 40%;
+        width: 50%;
         margin: 1em auto;
         border: 1px solid #ffffff;
         background-color: #ffffff;
         text-decoration: none;
         border-radius: 5px;
-        font-size: 1.25em;
+        font-size: 2em;
         color: rgba(18,45,66, 1);
         font-weight: bold;
     }
@@ -119,14 +120,14 @@ html{
     .login{
         position: absolute;
         width: max-content;
-        top: 13%;
-        left: 72%;
+        top: 10%;
+        left: 73%;
         text-decoration: none;
         padding: 0.75em 1.5em;
     }
     #welcome{
         text-align: center;
-        height: 100vh;
+        height: 180vh;
         margin: 5% auto 0;
         padding-top: 17.5%;
         margin-bottom: 12px;
@@ -138,31 +139,34 @@ html{
         background-image: linear-gradient(180deg, rgba(61, 210, 204, 0.4) 0%,
         rgba(18,45,66, 1) 100%), url(./img/welcome-home.png);
         background-size: cover;
+        object-position: 25% 25%;
+        
     }
     #welcome h1,p{
         color: #ffffff;
     }
     #welcome h1{
-        font-size: 5em;
+        font-size: 7.5em;
         margin: 2.5em auto 0;
     }
     #welcome p{
-        font-size: 1.25em;
-        margin: 0.25em auto;
+        font-size: 2.25em;
+        margin: 1em auto;
         width: 80%;
         height: 50%;
     }
     .getstarted{
         position: inherit;
-        top: -30%;
+        margin-top: -2em;
+        top: -20%;
         left: -1%;
-        padding: 0.5em 2em;
+        padding: 1em 2em;
     }
     .learnmore{
         position: inherit;
-        top: -30%;
+        top: -20%;
         left: -1%;
-        padding: 0.5em 2em;
+        padding: 1em 2em;
     }
     
     /*Features Section*/
@@ -174,19 +178,20 @@ html{
         padding-bottom: 10vh;
         height: max-content;
         padding-top: 20vh;
+        padding-bottom: 25vh;
     }
     #features h2{
         position: inherit;
         margin: 2vh auto 3vh;
         text-align: center;
-        font-size: 3em;
+        font-size: 5em;
     }
     .feature-desc{
         position: inherit;
         margin: auto;
         text-align: justify;
         width: 80%;
-        font-size: 1.25em;
+        font-size: 2em;
     }
     .feature-tile{
         display: flex;
@@ -197,37 +202,41 @@ html{
     .flex{
         display: flex;
         flex-direction: column;
-        margin: auto;
+        align-items: center;
+        margin: auto ;
     }
     .feature{
-        margin: 1.5em 2em;
+        margin: 5em 2em;
         width: 50vh;
         height: 25vh;
         padding: 0 1em;
     }
     .feature h3{
-        width: 80%;
+        width: 100%;
         max-height: 8vh;
         margin: 0.5em auto;
-        font-size: 2em;
+        font-size: 3em;
     }
     .feature img{
-        margin-top: 1em;
+        margin-top: 5em;
         filter:brightness(1000%);
-        max-height: 40px;
+        height: 60px;
     }
     .feature-caption{
         position: inherit;
         width: 80%;
         margin: 0.5em auto;
         text-align: justify;
-        font-size: 1.25em;
+        font-size: 2em;
         color: #ffffff;
+    }
+    .mapouter{
+        margin: 10em auto -5em;
     }
     
     /*Display Section*/
     #display{
-        height: 425vh;
+        height: 600vh;
         z-index: -1;
     }
     .display-bg{
@@ -239,11 +248,11 @@ html{
         color: #ffffff;
     }
     #display h1{
-        padding-top: 20vh;
+        padding-top: 30vh;
         width: 80%;
         margin: auto;
         text-align: center;
-        font-size: 3em;
+        font-size: 5em;
     }
     .display-desc{
         justify-content: center;
@@ -254,42 +263,43 @@ html{
     }
     .display-desc h2{
         text-align: center;
-        font-size: 2em;
+        font-size: 3.5em;
         margin: 0.5em auto;
     }
     .display-desc p{
         margin: 1em auto;
         height: 25%;
-        font-size: 1.25em;
+        font-size: 2em;
     }
     .display-left{
         position:relative;
         margin: auto;
-        left: 10%;
+        left: 20%;
         width: 100%;
-        max-width: 320px;
+        max-width: 360px;
     }
     .display-right{
         position:relative;
         margin: auto;
-        left: 10%;
-        max-width: 320px;
+        left: 20%;
+        max-width: 360px;
     }
     
     /*About Section*/
     #about{
-        height: 100vh;
+        height: 150vh;
     }
     #about h1{
-        padding-top: 20vh;
+        padding-top: 30vh;
         color:#1B262C;
-        font-size: 3em;
+        font-size: 5em;
+        width: 100%;
     }
     #about p{
         width: 80%;
         margin: 1em auto;
         text-align: justify;
-        font-size: 1.5em;
+        font-size: 2.25em;
         color:#1B262C;
     }
     .creator-div{
@@ -297,12 +307,16 @@ html{
         justify-content: center;
     }
     .creator{
-        margin: 0 auto;
+        margin: 2.5em auto;
+        width: 100%;
+        justify-content: center;
     }
     .creator img{
-        margin: 1em;
-        width: 240px;
-        height: 240px;
+        position: inherit;
+        justify-content: center;
+        margin: 1em 27%;
+        width: 320px;
+        height: 320px;
         object-fit: cover;
         object-position: 50% 45%;
         border-radius: 20px;
@@ -312,22 +326,19 @@ html{
     }
     .creator h3{
         padding: 0.75em none;
-        margin: auto;
-        width: 60%;
+        margin: 1em auto 0;
+        width: 80%;
         height: 15%;
-        font-size: 1.25em;
+        font-size: 2.5em;
         text-align: center;
     }
     .creator h4{
         margin: auto;
+        margin-top: 0.5em;
         width: 75%;
-        font-size: 1em;
+        font-size: 2em;
         font-weight: lighter;
         text-align: center;
-    }
-    #iqbal{
-        object-fit: cover;
-        object-position: 50% 45%;
     }
     
     /*Footer*/
@@ -335,14 +346,43 @@ html{
         text-align: center;
         background-color: #1B262C;
         color:#ffffff;
-        height: 25vh;
-        padding-top: 7.5vh;
+        height: 140vh;
+        padding-top: 60vh;
+    }
+    footer h2{
+        font-size: 4em;
+    }
+    footer p{
+        width: 100%;
+        font-size: 2em;
+        margin: 0.5em auto;
     }
     #social{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 1.5em auto 0.5em;
+        justify-content: center;
+    }
+    #social div{
+        position: inherit;
+        width: 100%;
+        margin: -2em auto;
         display: flex;
     }
+    #social img{
+        vertical-align: bottom;
+        margin: auto 0;
+        width: 60px;
+    }
     .profile-link{
-        margin: 2em auto;
+        margin: 2em 0.5em;
+        text-decoration: none;
+        font-size: 2em;
+    }
+    .address{
+        margin: 1.5em auto 1em;
+        width: 70%;
     }
 }
 
@@ -351,7 +391,7 @@ html{
 
 
 /*Desktop View*/
-@media screen and (min-width:1280px){
+@media screen and (min-device-width:1280px) and (max-device-width: 1920px){
     /*Navigation Bar*/
     #navbar{
         position: fixed;
@@ -450,13 +490,13 @@ html{
     }
     .getstarted{
         position: inherit;
-        top: -25%;
+        top: -20%;
         left: -1%;
         padding: 0.5em 2em;
     }
     .learnmore{
         position: inherit;
-        top: -25%;
+        top: -20%;
         right: -1%;
         padding: 0.5em 1.75em;
     }
@@ -616,14 +656,40 @@ html{
         text-align: center;
         background-color: #1B262C;
         color:#ffffff;
-        height: 25vh;
+        height: 40vh;
         padding-top: 7.5vh;
     }
+    footer h2{
+        font-size: 2em;
+    }
+    footer p{
+        font-size: 1em;
+        margin: 0.5em auto;
+    }
     #social{
+        width: 100%;
         display: flex;
+        margin: 1.5em 0 0.5em;
+        justify-content: center;
+    }
+    #social div{
+        margin: auto 5em;
+    }
+    #social img{
+        vertical-align: bottom;
+        margin: auto 0;
+        max-width: 20px;
     }
     .profile-link{
-        margin: 2em auto;
+        margin: 2em 0.5em;
+        text-decoration: none;
+    }
+    .profile-link:hover,.profile-link:focus{
+        color: #3DD2CC;
+    }
+    .address{
+        margin:  0 auto 0.5em;
+        width: 30%;
     }
 }
 
@@ -652,18 +718,11 @@ html{
 
 
 /*Animations*/
-/* .fade-up{
+.fade-up{
     -webkit-animation: fade-up 2s both;
-} */
+}
 
-/* 
-.later{
-    animation-name: fade-up;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
-} */
-
-/* @keyframes fade-up{
+@keyframes fade-up{
     0%{
         transform: translateY(50px);
         opacity: 0;
@@ -683,4 +742,4 @@ html{
         transform: translateY(-10px);
         opacity: 1;
     }
-} */
+}
