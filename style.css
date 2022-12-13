@@ -16,7 +16,7 @@ html{
 
 
 /*Responsive: Mobile*/
-@media screen and (max-device-width: 720px) and (max-device-width: 1081px){
+@media screen and (max-device-width: 720px) and (max-device-width: 1080px){
     html{
         scroll-behavior: smooth;
         min-width: 720px;
