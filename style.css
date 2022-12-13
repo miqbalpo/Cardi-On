@@ -391,7 +391,7 @@ html{
 
 
 /*Desktop View*/
-@media screen and (min-device-width:1280px) and (max-device-width: 1920px){
+@media screen and (min-device-width:1280px) and (max-device-width: 2560px){
     /*Navigation Bar*/
     #navbar{
         position: fixed;
