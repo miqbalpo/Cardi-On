@@ -16,7 +16,7 @@ html{
 
 
 /*Responsive: Mobile*/
-@media screen and (max-device-width: 720px) and (max-device-width: 1080px){
+@media screen and (max-device-width: 1080px) {
     html{
         scroll-behavior: smooth;
         min-width: 720px;
@@ -25,7 +25,7 @@ html{
         position: fixed;
         display: flex;
         flex-wrap: wrap;
-        width: 100vh;
+        width: 100%;
         top: 0;
         padding: 2em 0;
         vertical-align: middle;
@@ -34,7 +34,7 @@ html{
     }
     #logo{
         position: relative;
-        right: 5%;
+        left: 5%;
         margin: auto;
         max-width: 80px;
         vertical-align: middle;
@@ -52,8 +52,8 @@ html{
     .name{
         display: block;
         position: relative;
-        right: 35%;
-        width: 20vh;
+        right: 17%;
+        width: 30%;
         font-size: 2.25em;
         font-weight: bold;
         color: #ffffff !important;
@@ -70,7 +70,7 @@ html{
     }
     .dropdown {
         position: relative;
-        right: 20%;
+        right: 10%;
     }
     .dropdown-content {
         display: none;
