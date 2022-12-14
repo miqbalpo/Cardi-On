@@ -719,8 +719,21 @@ html{
 
 /*Animations*/
 .fade-up{
-    -webkit-animation: fade-up 2s both;
+    /*-webkit-animation: fade-up 2s both;*/
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+    transition-delay: 0.1s;   
+        
 }
+
+.animate{
+    /*opacity: 1;
+    transform: translateX(0);*/
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 @keyframes fade-up{
     0%{
@@ -733,13 +746,5 @@ html{
     }
 }
 
-@keyframes focus{
-    0%{
-        transform: translateY(0);
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-10px);
-        opacity: 1;
-    }
-}
+
+
