@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    padding: 0; 
+    color: #ffffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+    /*Navigation Bar*/
+    #navbar{
+        position: fixed;
+        display: flex;
+        width: 100%;
+        top: 0;
+        padding: 1.25em;
+        vertical-align: middle;
+        background-color: #121212;
+        z-index: 1;
+    }
+    #logo{
+        margin-bottom: 0.5%;
+        width:40px;
+        vertical-align: middle;
+    }
+    .nav-button{
+        margin: auto 1em;
+        font-size: 1.25em;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .nav-button{
+        margin: auto 1em;
+        font-size: 1.2em;
+        color: #ffffff;
+    }
+    .nav-button:hover{
+        color: #F05454;
+    }
+    .name{
+        width: 150vh;
+        font-size: 1.25em;
+        color: #ffffff !important;
+    }
+    .left{
+        margin-left: -16%;
+    }
+    .right{
+        width: 100vh;
+        margin-right: 10%;
+    }
+    .dropdown,.dropbtn,.dropdown-content{
+        display: none;
+    }
+
+    /*Welcome Section*/
+    .login,.getstarted,.learnmore{
+        border: 1px solid #ffffff;
+        background-color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.25em;
+        color: #121212;
+        font-weight: bold;
+    }
+    .login:focus,.login:hover,.learnmore:focus,.learnmore:hover,.getstarted:focus,.getstarted:hover{
+        border-color: #F05454;
+        color: #F05454;
+        background-color: rgba(18,18,18, 0.5);
+    }
+    .login{
+        position: inherit;
+        top: -27%;
+        left: 43.5%;
+        text-decoration: none;
+        padding: 0.5em 1.75em;
+    }
+    #welcome{
+        text-align: center;
+        height: 100vh;
+        margin: 5% auto 0;
+        padding-top: 17.5%;
+        margin-bottom: 12px;
+        z-index: 0;
+    }
+    .welcome-bg{
+        position: relative;
+        top: -2.9em;
+        background-image: linear-gradient(180deg, rgba(240, 84, 84, 0.4) 0%,
+        rgba(18,18,18, 1) 100%), url(./img/welcome-home.png);
+        background-size: cover;
+    }
+    #welcome h1,p{
+        color: #ffffff;
+    }
+    #welcome h1{
+        font-size: 5em;
+        margin: 0.25em auto 0;
+    }
+    #welcome p{
+        font-size: 1.5em;
+        margin: 0.25em auto;
+        width: 80%;
+        height: 50%;
+    }
+    .getstarted{
+        position: inherit;
+        top: -20%;
+        left: -1%;
+        padding: 0.5em 2em;
+    }
+    .learnmore{
+        position: inherit;
+        top: -20%;
+        right: -1%;
+        padding: 0.5em 1.75em;
+    }
+
+    /*Features Section*/
+    #features {
+        text-align: center;
+        background-color: rgba(18,18,18, 1);
+        color: #ffffff;
+        margin-top: -10.5vh;
+        height: max-content;
+        padding: 17.5vh;
+        padding-top: 20vh;
+    }
+    #features h2{
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        font-size: 3em;
+    }
+    .feature-desc{
+        margin: auto;
+        width: 80%;
+        font-size: 1.25em;
+    }
+    .feature-tile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .flex{
+        display: flex;
+        margin: auto;
+    }
+    #features .flex{
+        justify-content: center;
+    }
+    .feature{
+        margin: 1.5em 2em;
+        width: 40vh;
+        height: 25vh;
+        border-radius: 20px;
+        padding: 0 1em;
+    }
+    .feature h3{
+        margin: 0.25em auto;
+        font-size: 1.25em;
+    }
+    .feature img{
+        filter:brightness(1000%);
+    }
+    .feature-caption{
+        position: inherit;
+        width: 100%;
+        margin: 1em auto;
+        text-align: justify;
+        font-size: 1em;
+        color: #ffffff;
+    }
+
+    /*Display Section*/
+    #display{
+        height: 240vh;
+        z-index: -1;
+    }
+    .display-bg{
+        background-image: linear-gradient(0deg, rgba(18, 18, 18, 1) 0%,
+        rgba(240, 84, 84, 0.5) 33%, rgba(18,18,18, 1) 100%), url(./img/welcome-display.png);
+        background-size: cover;
+    }
+    #display h1,p{
+        color: #ffffff;
+    }
+    #display h1{
+        padding-top: 20vh;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 3em;
+    }
+    .display-desc{
+        justify-content: center;
+        margin: 1em 5em 4em;
+        width: 50%;
+        text-align: justify;
+        border-radius: 25px;
+    }
+    .display-desc h2{
+        text-align: center;
+        font-size: 1.75em;
+        margin: 0.5em auto;
+    }
+    .display-desc p{
+        margin: 1em auto;
+        height: 25%;
+        font-size: 1em;
+    }
+    .display-left{
+        margin: 1em 5em;
+        max-width: 320px;
+    }
+    .display-right{
+        margin: -1.5em 5em;
+        max-width: 320px;
+    }
+
+    /*About Section*/
+    #about{
+        height: 100vh;
+    }
+    #about h1{
+        padding-top: 20vh;
+        color:#ffffff;
+    }
+    #about p{
+        width: 80%;
+        margin: 1em auto;
+        text-align: center;
+        font-size: 1.25em;
+        color:#ffffff;
+    }
+    .creator-div{
+        margin: auto 15em;
+        justify-content: center;
+    }
+    .creator{
+        margin: 0 auto;
+    }
+    .creator img{
+        margin: 1em;
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .creator h3,h4{
+        color: #ffffff;
+    }
+    .creator h3{
+        padding: 0.75em none;
+        margin: auto;
+        width: 60%;
+        height: 15%;
+        font-size: 1.25em;
+        text-align: center;
+    }
+    .creator h4{
+        margin: auto;
+        width: 75%;
+        font-size: 1em;
+        font-weight: lighter;
+        text-align: center;
+    }
+    #iqbal{
+        object-fit: cover;
+        object-position: 50% 45%;
+    }
+
+    /*Footer*/
+    footer{
+        text-align: center;
+        background-color: #121212;
+        color:#ffffff;
+        height: 40vh;
+        padding-top: 7.5vh;
+    }
+    footer h2{
+        font-size: 2em;
+    }
+    footer p{
+        font-size: 1em;
+        margin: 0.5em auto;
+    }
+    #social{
+        width: 100%;
+        display: flex;
+        margin: 1.5em 0 0.5em;
+        justify-content: center;
+    }
+    #social div{
+        margin: auto 5em;
+    }
+    #social img{
+        vertical-align: bottom;
+        margin: auto 0;
+        max-width: 20px;
+    }
+    .profile-link{
+        margin: 2em 0.5em;
+        text-decoration: none;
+    }
+    .profile-link:hover,.profile-link:focus{
+        color: #F05454;
+    }
+    .address{
+        margin:  0 auto 0.5em;
+        width: 30%;
+    }
+
+/*Google Maps API*/
+.mapouter{
+    position: relative;
+    text-align: right;
+    width: 100%;
+    height: 540px;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background:none !important;
+    width: 100%;
+    height: 540px;
+}
+.gmap_iframe {
+    height: 540px!important;
+}
+
+
+
+
+/*Animations*/
+.fade-up{
+    
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-out;
+    transition-delay: 0.1s;   
+        
+}
+
+.animate{
+    /*opacity: 1;
+    transform: translateX(0);*/
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+@keyframes fade-up{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+

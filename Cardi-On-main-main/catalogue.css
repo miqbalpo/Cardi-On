@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    padding: 0; 
+    color: #ffffff;
+    font-size: 1em;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav .left{
+    margin: auto auto auto 5vw;
+}
+nav .email{
+    margin: auto;
+}
+.dropdown-profile .right{
+    position: relative;
+    right: 0.25vw;
+}
+.dropdown-profile .profile-name{
+    font-size: 0.825em;
+}
+
+    /*Search Section*/
+    #search {
+        text-align: center;
+        background-image: linear-gradient(180deg, rgba(18,18,18, 0.8) 0%, rgba(18,18,18, 0.8) 100%), url(img/catalogue-bg.jpg);
+        background-size: cover;
+        color: #ffffff;
+        margin-top: -10.5vh;
+        height: 145vh;
+        padding: 17.5vh;
+        padding-top: 20vh;
+    }
+    #search h2{
+        margin-top: 14vh;
+        margin-bottom: 1vh;
+        font-size: 3em;
+    }
+    .search-sports{
+        display: flex;
+        margin: 2.5vh auto;
+        flex-direction: row;
+        justify-content: center;
+        height: 75vh;
+        padding: 1em;
+    }
+    .flex{
+        display: flex;
+        margin: auto;
+    }
+    .places{
+        justify-content: center;
+        margin: 1.5em 1em;
+        width: max-content;
+        height: 75vh;
+        padding: 1em;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+    }
+    .places img{
+        justify-content: center;
+        width: 270px;
+        height: 180px;
+        background-size: contain;
+        border-radius: 15px;
+    }
+    .places h3{
+        position: inherit;
+        margin: 1em auto 0;
+        width: 80%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .rate, p[class="address"], p[class="type"]{
+        font-size: 1.1em;
+    }
+    .rate{
+        margin: 0.5em auto;
+        color: gold;
+        font-size: 1.25em;
+    }
+    .location{
+        overflow-y: hidden;
+        position: inherit;
+        margin: 1em auto;
+        width: 90%;
+        height: 12vh;
+    }
+    .places:hover{
+        scale: 1.05;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #pages{
+        display: flex;
+        justify-content: center;
+        padding: 10vh 0;
+    }
+    .page-num{
+        font-size: 1.5em;
+        margin: 1em 0.5em;
+        text-decoration: none;
+    }
+    .page-num:hover{
+        color: #F05454;
+        scale: 1.1;
+    }
+    .current{
+        color: #F05454;
+    }
+
+
+    /*Footer*/
+    footer{
+        text-align: center;
+        background-color: #121212;
+        color:#ffffff;
+        height: 40vh;
+        padding-top: 7.5vh;
+    }
+    footer h2{
+        font-size: 2em;
+    }
+    footer p{
+        font-size: 1em;
+        margin: 0.5em auto;
+    }
+    #social{
+        width: 100%;
+        display: flex;
+        margin: 1.5em 0 0.5em;
+        justify-content: center;
+    }
+    #social div{
+        margin: auto 5em;
+    }
+    #social img{
+        vertical-align: bottom;
+        margin: auto 0;
+        max-width: 20px;
+    }
+    .profile-link{
+        margin: 2em 0.5em;
+        text-decoration: none;
+    }
+    .profile-link:hover,.profile-link:focus{
+        color: #F05454;
+    }
+    .address{
+        margin:  0 auto 0.5em;
+        width: 30%;
+    }
+
+
+/*Animations*/
+.fade-up{
+    -webkit-animation: fade-up 2s both;
+}
+
+@keyframes fade-up{
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes focus{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
